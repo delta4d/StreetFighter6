@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>SF6 Combo Guide</title>
+<link rel="stylesheet" href="assets/css/shared.css">
+<style>
+.index-hero {
+  padding: 32px 16px 20px;
+  text-align: center;
+}
+.index-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 52px; line-height: 1; letter-spacing: 0.06em;
+  background: linear-gradient(135deg, #fff 30%, var(--gold) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.index-sub {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px; letter-spacing: 0.2em; color: var(--red);
+  text-transform: uppercase; margin-top: 4px;
+}
+.index-desc {
+  font-size: 13px; color: var(--text-dim); margin-top: 10px; line-height: 1.5;
+}
+
+/* ── CHARACTER GRID ── */
+.char-grid {
+  padding: 0 12px 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.char-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 10px; overflow: hidden;
+  text-decoration: none; color: inherit;
+  display: flex; flex-direction: column;
+  -webkit-tap-highlight-color: transparent;
+  transition: border-color 0.15s, background 0.15s;
+  position: relative;
+}
+.char-card:active { background: #18181f; border-color: var(--gold); }
+
+.char-card-top {
+  padding: 14px 14px 8px;
+  display: flex; flex-direction: column; gap: 2px;
+  flex: 1;
+}
+.char-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px; letter-spacing: 0.08em; line-height: 1;
+  color: var(--text);
+}
+.char-style {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px; letter-spacing: 0.12em; color: var(--text-muted);
+}
+.char-count {
+  font-size: 11px; color: var(--text-dim); font-weight: 500; margin-top: 4px;
+}
+
+.char-card-bottom {
+  padding: 6px 14px 10px;
+  display: flex; gap: 4px; flex-wrap: wrap;
+}
+.char-tag {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.06em;
+  padding: 2px 6px; border-radius: 3px;
+}
+.char-tag-modern  { background: #0d3d1f; color: var(--green); border: 1px solid #1a6b35; }
+.char-tag-classic { background: #3d2a00; color: var(--gold);  border: 1px solid #6b4a00; }
+
+.char-card-arrow {
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  color: var(--text-muted); opacity: 0.5;
+}
+.char-card-arrow svg { width: 16px; height: 16px; }
+
+/* coming soon */
+.char-card.soon {
+  opacity: 0.4; pointer-events: none;
+}
+.char-card.soon .char-name { color: var(--text-dim); }
+.soon-badge {
+  position: absolute; top: 8px; right: 8px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 9px; letter-spacing: 0.1em;
+  color: var(--text-muted); background: var(--bg3);
+  border: 1px solid var(--border); border-radius: 3px;
+  padding: 2px 5px;
+}
+
+/* section header */
+.roster-header {
+  padding: 16px 16px 8px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 14px; letter-spacing: 0.15em; color: var(--text-muted);
+  text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-left">
+      <div class="header-game">Street Fighter 6</div>
+      <div class="header-char">COMBO<br>GUIDE</div>
+    </div>
+    <div class="header-badge">
+      <div class="platform-tag">PS5 · Modern</div>
+    </div>
+  </div>
+  <div class="header-stripe"></div>
+</header>
+
+<div class="index-hero">
+  <div class="index-desc">Select a character to view their PS5 combo guide.</div>
+</div>
+
+<div class="roster-header">Available Now</div>
+<div class="char-grid">
+
+  <a class="char-card" href="characters/luke/modern.html">
+    <div class="char-card-top">
+      <div class="char-name">LUKE</div>
+      <div class="char-style">All-Rounder · Easy to Learn</div>
+      <div class="char-count">23 combos</div>
+    </div>
+    <div class="char-card-bottom">
+      <span class="char-tag char-tag-modern">Modern</span>
+    </div>
+    <div class="char-card-arrow">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+  </a>
+
+</div>
+
+<div class="roster-header">Coming Soon</div>
+<div class="char-grid">
+
+  <div class="char-card soon">
+    <span class="soon-badge">SOON</span>
+    <div class="char-card-top">
+      <div class="char-name">RYU</div>
+      <div class="char-style">Balanced · Fundamentals</div>
+    </div>
+    <div class="char-card-bottom">
+      <span class="char-tag char-tag-modern">Modern</span>
+      <span class="char-tag char-tag-classic">Classic</span>
+    </div>
+  </div>
+
+  <div class="char-card soon">
+    <span class="soon-badge">SOON</span>
+    <div class="char-card-top">
+      <div class="char-name">CAMMY</div>
+      <div class="char-style">Rushdown · Aggressive</div>
+    </div>
+    <div class="char-card-bottom">
+      <span class="char-tag char-tag-modern">Modern</span>
+    </div>
+  </div>
+
+  <div class="char-card soon">
+    <span class="soon-badge">SOON</span>
+    <div class="char-card-top">
+      <div class="char-name">CHUN-LI</div>
+      <div class="char-style">Technical · Mix-ups</div>
+    </div>
+    <div class="char-card-bottom">
+      <span class="char-tag char-tag-modern">Modern</span>
+    </div>
+  </div>
+
+  <div class="char-card soon">
+    <span class="soon-badge">SOON</span>
+    <div class="char-card-top">
+      <div class="char-name">KEN</div>
+      <div class="char-style">Rushdown · Pressure</div>
+    </div>
+    <div class="char-card-bottom">
+      <span class="char-tag char-tag-modern">Modern</span>
+    </div>
+  </div>
+
+</div>
+
+<div class="bottom-pad"></div>
+</body>
+</html>
